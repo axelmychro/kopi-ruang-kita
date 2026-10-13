@@ -1,25 +1,10 @@
 import "./App.css";
-
+import Navbar from "./Navbar";
 function App() {
   return (
-    <>
-      <header className="site-header flex items-center justify-between">
-        <a className="brand" href="#home" aria-label="Kopi Ruang Kita, beranda">
-          <span className="brand-mark" aria-hidden="true">K</span>
-          <span>
-            <strong>Kopi Ruang Kita</strong>
-            <small>Tempat pulang sejenak</small>
-          </span>
-        </a>
-
-        <nav className="navigation" aria-label="Navigasi utama">
-          <a href="#home">Beranda</a>
-          <a href="#tentang">Tentang</a>
-          <a className="nav-cta" href="#footer">Temukan kami <span aria-hidden="true">↗</span></a>
-        </nav>
-      </header>
-
-      <main id="home">
+ <>
+  <Navbar />
+  <main id="home">
         <section className="hero">
           <div className="hero-copy">
             <p className="eyebrow">Coffee &amp; Good Vibes</p>
@@ -85,7 +70,7 @@ function App() {
 
       <footer className="site-footer" id="footer">
         <a className="brand footer-brand" href="#home">
-          <span className="brand-mark" aria-hidden="true">K</span>
+       
           <span>
             <strong>Kopi Ruang Kita</strong>
             <small>Tempat pulang sejenak</small>
