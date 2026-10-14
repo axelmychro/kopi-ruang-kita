@@ -1,21 +1,29 @@
 import "./App.css";
+import Contact from "./components/Contact";
 import Navbar from "./Navbar";
 import Menu from "./Menu";
 import Promo from "./Promo";
 function App() {
   return (
- <>
-  <Navbar />
-  <main id="home">
+    <>
+      <Navbar />
+      <main id="home">
         <section className="hero">
           <div className="hero-copy">
             <p className="eyebrow">Coffee &amp; Good Vibes</p>
-            <h1>Tempat singgah,<br />cerita <em>bermula.</em></h1>
+            <h1>
+              Tempat singgah,
+              <br />
+              cerita <em>bermula.</em>
+            </h1>
             <p className="hero-description">
               Secangkir kopi, ruang yang nyaman, dan waktu untuk menikmati
               hal-hal sederhana. Selamat datang di ruang kita.
             </p>
-            <a className="primary-cta inline-flex items-center gap-5" href="#footer">
+            <a
+              className="primary-cta inline-flex items-center gap-5"
+              href="#footer"
+            >
               Mampir ke ruang kita <span aria-hidden="true">→</span>
             </a>
             <p className="hero-note">Dibuat dengan hati, disajikan hangat.</p>
@@ -35,20 +43,30 @@ function App() {
             <div className="about-copy">
               <h2>Tentang Kami</h2>
               <p>
-                <strong>Kopi Ruang Kita</strong> adalah coffee shop baru di Kota Medan
-                yang menyajikan kopi pilihan nusantara dan dunia dalam suasana yang
-                nyaman dan hangat. Kami percaya secangkir kopi bisa menjadi awal
-                dari banyak cerita baru.
+                <strong>Kopi Ruang Kita</strong> adalah coffee shop baru di Kota
+                Medan yang menyajikan kopi pilihan nusantara dan dunia dalam
+                suasana yang nyaman dan hangat. Kami percaya secangkir kopi bisa
+                menjadi awal dari banyak cerita baru.
               </p>
               <p>
-                Dari Kopi Susu Gula Aren andalan sampai camilan hangat seperti Roti
-                Bakar dan Croissant, semua disajikan segar setiap hari. Tersedia
-                area indoor dan corner Wi-Fi untuk kamu yang ingin work-from-cafe.
+                Dari Kopi Susu Gula Aren andalan sampai camilan hangat seperti
+                Roti Bakar dan Croissant, semua disajikan segar setiap hari.
+                Tersedia area indoor dan corner Wi-Fi untuk kamu yang ingin
+                work-from-cafe.
               </p>
               <ul className="about-highlights">
-                <li><span aria-hidden="true">✓</span> Biji kopi pilihan Gayo &amp; Toraja</li>
-                <li><span aria-hidden="true">✓</span> Area nyaman &amp; Wi-Fi gratis</li>
-                <li><span aria-hidden="true">✓</span> Buka setiap hari 08.00 – 22.00</li>
+                <li>
+                  <span aria-hidden="true">✓</span> Biji kopi pilihan Gayo &amp;
+                  Toraja
+                </li>
+                <li>
+                  <span aria-hidden="true">✓</span> Area nyaman &amp; Wi-Fi
+                  gratis
+                </li>
+                <li>
+                  <span aria-hidden="true">✓</span> Buka setiap hari 08.00 –
+                  22.00
+                </li>
               </ul>
             </div>
 
@@ -68,27 +86,31 @@ function App() {
             </div>
           </div>
         </section>
+
+        <Contact />
       </main>
 
       <Menu />
-      
+
       <Promo />
 
       <footer className="site-footer" id="footer">
         <a className="brand footer-brand" href="#home">
-       
           <span>
             <strong>Kopi Ruang Kita</strong>
             <small>Tempat pulang sejenak</small>
           </span>
         </a>
         <p>Ruang hangat untuk kopi dan cerita sederhana.</p>
-        <a className="back-to-top" href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a>
-        <span className="copyright">© {new Date().getFullYear()} Kopi Ruang Kita</span>
+        <a className="back-to-top" href="#home">
+          Kembali ke atas <span aria-hidden="true">↑</span>
+        </a>
+        <span className="copyright">
+          © {new Date().getFullYear()} Kopi Ruang Kita
+        </span>
       </footer>
     </>
   );
- 
 }
 
 export default App;
