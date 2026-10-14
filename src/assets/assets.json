@@ -1,8 +1,6 @@
 {
-  "project": "Kopi Ruang Kita",
-  "description": "Daftar aset gambar (Unsplash, lisensi gratis) dan ide menu untuk website coffee shop Kopi Ruang Kita - UTS Pemrograman Web 2026",
-  "total_assets": 23,
-  "license": "Unsplash License (bebas dipakai, tidak wajib atribusi, tapi disarankan)",
+  "description": "Daftar aset gambar dan ide menu untuk website coffee shop Kopi Ruang Kita - UTS Pemrograman Web 2026",
+  "license": "Unsplash License)",
   "assets": [
     {
       "id": "hero",
