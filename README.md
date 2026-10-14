@@ -1,16 +1,43 @@
-# React + Vite
+# Kopi Ruang Kita
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website profil coffee shop **Kopi Ruang Kita** — proyek UTS Pemrograman Web (ILK2106), Fakultas Ilmu Komputer dan Teknologi Informasi, Universitas Sumatera Utara.
 
-Currently, two official plugins are available:
+> Live: https://kopi-ruang-kita.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tentang
+Landing page satu halaman (7 section utama) untuk coffee shop fiktif di Kota Medan: memperkenalkan tempat, menu, promo, dan informasi lokasi. Data bersifat dummy/statis — tanpa backend dan tanpa database.
 
-## React Compiler
+## Teknologi
+- [React 19](https://react.dev) + [Vite 8](https://vite.dev)
+- [Tailwind CSS 4](https://tailwindcss.com)
+- JavaScript (ES modules)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Section
+Navbar · Hero · Tentang Kami · Menu Coffee Shop · Promo Hari Ini · Hubungi Kami · Footer
 
-## Expanding the ESLint configuration
+## Fitur
+- **Filter kategori menu** — tombol All / Coffee / Non-Coffee / Snack menampilkan-menyembunyikan menu (20 produk)
+- **Modal promo** — tombol "Lihat Promo" menampilkan detail promo beserta syarat & ketentuan
+- **Validasi form** — form "Hubungi Kami" memeriksa seluruh field terisi dan format email
+- **Animasi** — scroll-reveal pada section, hover pada card, indikator buka/tutup toko yang diperbarui tiap menit
+- **Responsif** — layout menyesuaikan desktop dan smartphone
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Menjalankan secara lokal
+```bash
+npm install
+npm run dev      # server pengembangan
+npm run build    # build produksi
+npm run preview  # pratinjau hasil build
+```
+
+## Struktur
+```
+src/
+├── App.jsx          # komposisi halaman + animasi scroll-reveal
+├── App.css          # gaya kustom
+├── index.css        # Tailwind
+└── components/      # Navbar, Hero, About, Menu, Promo, Contact, Footer
+```
+
+## Tim
+Proyek dikerjakan secara tim. Kontribusi terlihat di [riwayat commit](https://github.com/axelmychro/kopi-ruang-kita/commits/main).
