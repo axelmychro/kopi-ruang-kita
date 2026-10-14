@@ -218,7 +218,7 @@ function Menu() {
       id="menu"
       className="bg-[#f8f3ed] px-8 py-20"
     >
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center" data-reveal>
         <h2
           className="text-4xl font-bold text-[#4b2e1f]"
         >
@@ -232,6 +232,7 @@ function Menu() {
 
       <div
         className="mb-12 flex flex-wrap justify-center gap-4"
+        data-reveal
       >
         {["All", "Coffee", "Non-Coffee", "Snack"].map((item) => (
           <button
@@ -245,11 +246,13 @@ function Menu() {
       </div>
 
       <div
-        className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+        className="menu-grid grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
       >
-        {filteredMenus.map((item) => (
+        {filteredMenus.map((item, index) => (
           <div
             key={item.id}
+            data-reveal
+            style={{ transitionDelay: `${(index % 4) * 80}ms` }}
             className="overflow-hidden rounded-2xl bg-white shadow-md transition hover:-translate-y-2 hover:shadow-xl"
           >
             <div className="overflow-hidden">

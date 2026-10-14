@@ -57,7 +57,7 @@ function Promo() {
       id="promo"
       className="bg-[#f8f3ed] px-8 py-20"
     >
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center" data-reveal>
         <h2
           className="text-4xl font-bold text-[#4b2e1f]"
         >
@@ -75,6 +75,8 @@ function Promo() {
         {promos.map((promo) => (
           <div
             key={promo.id}
+            data-reveal
+            style={{ transitionDelay: `${(promo.id - 1) * 100}ms` }}
             className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl"
           >
             <div className="relative overflow-hidden">

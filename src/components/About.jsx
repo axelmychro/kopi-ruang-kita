@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about-section" id="tentang">
       <div className="about-content">
-        <div className="about-copy">
+        <div className="about-copy" data-reveal="left">
           <h2>Tentang Kami</h2>
           <p>
             <strong>Kopi Ruang Kita</strong> adalah coffee shop baru di Kota
@@ -34,12 +34,16 @@ function About() {
         <div className="about-gallery" aria-label="Suasana Kopi Ruang Kita">
           <img
             className="about-photo about-photo-first"
+            data-reveal="right"
+            style={{ transitionDelay: "100ms" }}
             src={about1}
             alt="Bar kopi dengan suasana hangat"
             loading="lazy"
           />
           <img
             className="about-photo about-photo-second"
+            data-reveal="right"
+            style={{ transitionDelay: "220ms" }}
             src={about2}
             alt="Area duduk nyaman di kedai kopi"
             loading="lazy"

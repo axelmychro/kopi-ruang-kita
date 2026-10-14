@@ -40,7 +40,7 @@ export default function Contact() {
 
   return (
     <section className="contact-section bg-[#FAF7F2] px-6 py-20" id="kontak">
-      <div className="mx-auto max-w-180 rounded-2xl border border-[#EBE3D5] bg-white p-8 shadow-md sm:p-12">
+      <div className="mx-auto max-w-180 rounded-2xl border border-[#EBE3D5] bg-white p-8 shadow-md sm:p-12" data-reveal>
         <div className="mb-10 text-center">
           <h2 className="mb-3 font-serif text-3xl font-bold text-[#513722] sm:text-4xl">Hubungi Kami</h2>
           <p className="text-sm leading-relaxed text-[#746658] sm:text-base">
