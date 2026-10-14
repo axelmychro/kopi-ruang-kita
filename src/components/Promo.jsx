@@ -172,7 +172,7 @@ function Promo() {
             </ul>
 
             <a
-              href="#form"
+              href="#kontak"
               className="mt-8 inline-block cursor-pointer rounded-full bg-[#c88b38] px-8 py-3 font-semibold text-[#4b2e1f] transition hover:bg-[#b77a2d]"
             >
               Tanya Promo
