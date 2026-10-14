@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import kopiSusu from "../assets/images/kopi-susu-gula-aren.jpg";
-import cappuccino from "../assets/images/cappuccino.jpg";
-import croissant from "../assets/images/croissant.jpg";
+import kopiSusu from "./assets/menu-coffee-susu_gula_aren.jpg";
+import cappuccino from "./assets/menu-coffee-cappuccino.jpg";
+import croissant from "./assets/menu-food-croissant.jpg";
 
 
 function Promo() {
@@ -73,14 +73,14 @@ function Promo() {
       id="promo"
       className="
       bg-[#f8f3ed]
-      py-20
       px-8
+      py-20
       "
     >
 
 
 
-      <div className="text-center mb-12">
+      <div className="mb-12 text-center">
 
 
         <h2
@@ -95,7 +95,7 @@ function Promo() {
 
 
 
-        <p className="text-gray-600 mt-3">
+        <p className="mt-3 text-gray-600">
           Penawaran spesial dari Kopi Ruang Kita
         </p>
 
@@ -108,12 +108,12 @@ function Promo() {
 
       <div
         className="
-        grid
-        grid-cols-1
-        md:grid-cols-3
-        gap-8
-        max-w-6xl
         mx-auto
+        grid
+        max-w-6xl
+        grid-cols-1
+        gap-8
+        md:grid-cols-3
         "
       >
 
@@ -127,12 +127,12 @@ function Promo() {
               key={promo.id}
 
               className="
-              bg-white
-              rounded-3xl
-              overflow-hidden
-              shadow-md
               flex
               flex-col
+              overflow-hidden
+              rounded-3xl
+              bg-white
+              shadow-md
               transition
               duration-300
               hover:-translate-y-2
@@ -157,8 +157,8 @@ function Promo() {
                   alt={promo.title}
 
                   className="
-                  w-full
                   h-56
+                  w-full
                   object-cover
                   transition-transform
                   duration-500
@@ -174,13 +174,13 @@ function Promo() {
                   absolute
                   top-4
                   left-4
+                  rounded-full
                   bg-[#d6a85f]
-                  text-white
                   px-4
                   py-2
-                  rounded-full
                   text-sm
                   font-bold
+                  text-white
                   "
                 >
 
@@ -199,10 +199,10 @@ function Promo() {
 
               <div
                 className="
-                p-6
                 flex
-                flex-col
                 flex-1
+                flex-col
+                p-6
                 "
               >
 
@@ -210,9 +210,9 @@ function Promo() {
 
                 <p
                   className="
-                  text-[#b88646]
                   text-sm
                   font-semibold
+                  text-[#b88646]
                   "
                 >
 
@@ -226,10 +226,10 @@ function Promo() {
 
                 <h3
                   className="
+                  mt-3
                   text-2xl
                   font-bold
                   text-[#4b2e1f]
-                  mt-3
                   "
                 >
 
@@ -243,10 +243,10 @@ function Promo() {
 
                 <p
                   className="
-                  text-gray-600
                   mt-3
-                  text-sm
                   flex-1
+                  text-sm
+                  text-gray-600
                   "
                 >
 
@@ -264,15 +264,15 @@ function Promo() {
 
                   className="
                   mt-6
+                  cursor-pointer
+                  rounded-full
                   bg-[#8b5e3c]
-                  text-white
                   px-6
                   py-3
-                  rounded-full
                   font-semibold
-                  cursor-pointer
-                  hover:bg-[#6f4e37]
+                  text-white
                   transition
+                  hover:bg-[#6f4e37]
                   "
 
                 >
@@ -312,11 +312,11 @@ function Promo() {
             className="
             fixed
             inset-0
-            bg-black/50
+            z-50
             flex
             items-center
             justify-center
-            z-50
+            bg-black/50
             px-5
             "
           >
@@ -325,12 +325,12 @@ function Promo() {
 
             <div
               className="
-              bg-[#f8f3ed]
-              rounded-3xl
-              max-w-xl
-              w-full
-              p-8
               relative
+              w-full
+              max-w-xl
+              rounded-3xl
+              bg-[#f8f3ed]
+              p-8
               "
             >
 
@@ -343,11 +343,11 @@ function Promo() {
 
                 className="
                 absolute
-                right-6
                 top-5
+                right-6
+                cursor-pointer
                 text-3xl
                 text-[#6f4e37]
-                cursor-pointer
                 "
               >
 
@@ -362,8 +362,8 @@ function Promo() {
 
               <p
                 className="
-                text-[#b88646]
                 font-semibold
+                text-[#b88646]
                 "
               >
 
@@ -382,11 +382,11 @@ function Promo() {
                 alt={showPromo.title}
 
                 className="
-                w-full
-                h-56
-                object-cover
-                rounded-2xl
                 mt-4
+                h-56
+                w-full
+                rounded-2xl
+                object-cover
                 "
 
               />
@@ -397,10 +397,10 @@ function Promo() {
 
               <h2
                 className="
+                mt-6
                 text-3xl
                 font-bold
                 text-[#4b2e1f]
-                mt-6
                 "
               >
 
@@ -414,8 +414,8 @@ function Promo() {
 
               <p
                 className="
-                text-gray-600
                 mt-4
+                text-gray-600
                 "
               >
 
@@ -430,10 +430,10 @@ function Promo() {
               <ul
                 className="
                 mt-5
-                text-gray-600
                 list-disc
-                pl-5
                 space-y-2
+                pl-5
+                text-gray-600
                 "
               >
 
@@ -459,17 +459,17 @@ function Promo() {
                 href="#form"
 
                 className="
-                inline-block
                 mt-8
+                inline-block
+                cursor-pointer
+                rounded-full
                 bg-[#c88b38]
-                text-[#4b2e1f]
                 px-8
                 py-3
-                rounded-full
                 font-semibold
-                cursor-pointer
-                hover:bg-[#b77a2d]
+                text-[#4b2e1f]
                 transition
+                hover:bg-[#b77a2d]
                 "
 
               >
