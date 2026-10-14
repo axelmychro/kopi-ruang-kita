@@ -8,8 +8,8 @@ function Hero() {
           Secangkir kopi, ruang yang nyaman, dan waktu untuk menikmati
           hal-hal sederhana. Selamat datang di ruang kita.
         </p>
-        <a className="primary-cta inline-flex items-center gap-5" href="#footer" data-reveal style={{ transitionDelay: "380ms" }}>
-          Mampir ke ruang kita <span aria-hidden="true">→</span>
+        <a className="primary-cta inline-flex items-center gap-5" href="#menu" data-reveal style={{ transitionDelay: "380ms" }}>
+          Lihat Menu <span aria-hidden="true">→</span>
         </a>
         <p className="hero-note" data-reveal style={{ transitionDelay: "460ms" }}>Dibuat dengan hati, disajikan hangat.</p>
       </div>
